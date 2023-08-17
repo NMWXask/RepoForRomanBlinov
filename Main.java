@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Привет Роман!");
         System.out.println("Работа с массивом для Git тренировки");
         System.out.println("====================================");
         Random random=new Random();
