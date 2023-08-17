@@ -8,10 +8,10 @@ public class Main {
         System.out.println("Работа с массивом для Git тренировки");
         System.out.println("====================================");
         Random random=new Random();
-        int n= random.nextInt(1,10);
+        int n= random.nextInt(6,10);
         int []mass=new int[n];
         for (int i = 0; i < mass.length; i++) {
-            mass[i]= random.nextInt(1,5);
+            mass[i]= random.nextInt(1,8);
         }
         //Выводим массив
         System.out.println(Arrays.toString(mass));
@@ -25,6 +25,8 @@ public class Main {
         System.out.println(maxEl);
         sredArifm(mass);
         checkEl(mass);
+        System.out.println();
+        checkEvenNumber(mass);
     }
     //Метод для нахождения среднего арифметического элементов массива
     public static void sredArifm(int[]arr){
@@ -46,5 +48,14 @@ public class Main {
             }
         }
         System.out.printf("Число %d в массиве встречается %d раз",number,count);
+    }
+    public static void checkEvenNumber(int []arr){
+        int count=0;
+        for (int i = 0; i < arr.length; i++) {
+            if((arr[i]%2)==0){
+                count++;
+            }
+        }
+        System.out.printf("Количество четных чисел в массиве %d",count);
     }
 }
